@@ -15,7 +15,9 @@
 
 <html>
 <head>
-    <title>List of all ads</title>
+    <jsp:include page="/partials/head.jsp">
+        <jsp:param name="title" value="List of all ads" />
+    </jsp:include>
 </head>
 <body>
 
