@@ -27,7 +27,7 @@ public class AdsIndexServlet extends HttpServlet {
 
         //in the view, iterate across the list and output the ads
         List<Ad> ads = adsDao.all();
-        request.setAttribute("ads", ads); // set attribute on request object
+        request.setAttribute("ads", ads); // set attribute on request object; could also just write as request.attribute("ads", DaoFactory.getAdsDao().all())
         request.getRequestDispatcher("ads/index.jsp").forward(request, response);  //ads index path goes here
 
     }
